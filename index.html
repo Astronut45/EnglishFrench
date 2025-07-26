@@ -7856,12 +7856,13 @@
             if (lowerName === 'sun' || lowerName.includes('star', 'Étoile')) return 'star';
             if (/^m\d+/.test(lowerName)) return 'messier';
             if (/^ngc\s?\d+/.test(lowerName)) return 'ngc';
+            if (/^ic\s?\d+/.test(lowerName)) return 'ic';
 
             return 'other';
         }
 
         // Define the desired order of categories (already present and correct)
-        const categoryOrder = ['moon', 'planet', 'messier', 'ngc', 'star', 'other'];
+        const categoryOrder = ['moon', 'planet', 'messier', 'ngc', 'ic', 'star', 'other'];
 
         // Get container elements
         const tocList = document.getElementById('toc-list');
