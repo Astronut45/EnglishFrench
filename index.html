@@ -225,7 +225,7 @@
                     ]
                 },
                 french: {
-                    name: "Moon",
+                    name: "Lune",
                     description: "La Lune est le seul satellite naturel de la Terre et le cinquième plus grand satellite du Système Solaire. Elle joue un rôle crucial dans la stabilisation de l'inclinaison axiale de la Terre, la création des marées et l'influence du climat de notre planète.",
                     details: [
                         "<strong>Type d'objet :</strong> Satellite naturel",
@@ -7848,6 +7848,7 @@
             const lowerName = bodyName.toLowerCase();
 
             if (lowerName === 'moon') return 'moon';
+            if (lowerName === 'lune') return 'moon';
 
             const planets = ['mercury', 'venus','vénus', 'earth', 'mars', 'jupiter', 'saturn', 'saturne', 'uranus', 'neptune'];
             if (planets.includes(lowerName)) return 'planet';
